@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "eXalt Navy Hoodie",
-      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-navy-hoodie.png",
       "category": "clothing",
       "price": 55,
       "popularity": 20,
@@ -12,7 +12,7 @@
     {
       "id": "2",
       "title": "eXalt Classic T-Shirt",
-      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-classic-tshirt.png",
       "category": "clothing",
       "price": 25,
       "popularity": 18,
@@ -21,7 +21,7 @@
     {
       "id": "3",
       "title": "eXalt Polo Navy",
-      "image": "https://images.unsplash.com/photo-1625910513433-8bfef0adbc7c?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-polo-navy.png",
       "category": "clothing",
       "price": 35,
       "popularity": 12,
@@ -30,7 +30,7 @@
     {
       "id": "4",
       "title": "eXalt Navy Sweatshirt",
-      "image": "https://images.unsplash.com/photo-1614676471928-2ed0ad1061a4?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-navy-sweatshirt.png",
       "category": "clothing",
       "price": 45,
       "popularity": 10,
@@ -39,7 +39,7 @@
     {
       "id": "5",
       "title": "eXalt Logo Cap",
-      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-logo-cap.png",
       "category": "accessories",
       "price": 20,
       "popularity": 15,
@@ -48,7 +48,7 @@
     {
       "id": "6",
       "title": "eXalt Tote Bag",
-      "image": "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-tote-bag.png",
       "category": "accessories",
       "price": 18,
       "popularity": 22,
@@ -57,7 +57,7 @@
     {
       "id": "7",
       "title": "eXalt Premium Backpack",
-      "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-premium-backpack.png",
       "category": "accessories",
       "price": 75,
       "popularity": 8,
@@ -66,7 +66,7 @@
     {
       "id": "8",
       "title": "eXalt Laptop Sleeve 15\"",
-      "image": "https://images.unsplash.com/photo-1574169208507-84376144848b?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-laptop-sleeve.png",
       "category": "accessories",
       "price": 40,
       "popularity": 11,
@@ -75,7 +75,7 @@
     {
       "id": "9",
       "title": "eXalt Notebook A5",
-      "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-notebook-a5.png",
       "category": "stationery",
       "price": 15,
       "popularity": 25,
@@ -84,7 +84,7 @@
     {
       "id": "10",
       "title": "eXalt Pen Set",
-      "image": "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-pen-set.png",
       "category": "stationery",
       "price": 12,
       "popularity": 14,
@@ -93,7 +93,7 @@
     {
       "id": "11",
       "title": "eXalt Travel Mug",
-      "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-travel-mug.png",
       "category": "stationery",
       "price": 28,
       "popularity": 17,
@@ -102,7 +102,7 @@
     {
       "id": "12",
       "title": "eXalt Sticker Pack",
-      "image": "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-sticker-pack.png",
       "category": "stationery",
       "price": 8,
       "popularity": 30,
@@ -111,7 +111,7 @@
     {
       "id": "13",
       "title": "eXalt x Flow Hoodie",
-      "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-flow-hoodie.png",
       "category": "limited-edition",
       "price": 75,
       "popularity": 35,
@@ -120,7 +120,7 @@
     {
       "id": "14",
       "title": "eXalt Pink Cap — Drop #1",
-      "image": "https://images.unsplash.com/photo-1534215754734-18e55168b426?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-pink-cap.png",
       "category": "limited-edition",
       "price": 35,
       "popularity": 28,
@@ -129,7 +129,7 @@
     {
       "id": "15",
       "title": "eXalt Premium Notebook — Gold Edition",
-      "image": "https://images.unsplash.com/photo-1592754862816-1a21a4ea2281?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-gold-notebook.png",
       "category": "limited-edition",
       "price": 30,
       "popularity": 20,
@@ -138,7 +138,7 @@
     {
       "id": "16",
       "title": "eXalt Heritage T-Shirt",
-      "image": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-heritage-tshirt.png",
       "category": "limited-edition",
       "price": 45,
       "popularity": 18,
@@ -147,7 +147,7 @@
     {
       "id": "17",
       "title": "eXalt Polo Pink Edition",
-      "image": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-polo-pink.png",
       "category": "clothing",
       "price": 38,
       "popularity": 9,
@@ -156,7 +156,7 @@
     {
       "id": "18",
       "title": "eXalt Conference Bag",
-      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=700&fit=crop&q=80",
+      "image": "/assets/products/exalt-conference-bag.png",
       "category": "accessories",
       "price": 50,
       "popularity": 7,
