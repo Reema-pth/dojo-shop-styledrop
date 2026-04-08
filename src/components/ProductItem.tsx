@@ -24,7 +24,7 @@ const ProductItem = ({
         to={`/product/${id}`}
         className="w-full h-[300px] max-md:h-[200px] overflow-hidden"
       >
-        <img src={`/assets/${image}`} alt={title} />
+        <img src={image.startsWith("http") ? image : `/assets/${image}`} alt={title} className="w-full h-full object-cover" />
       </Link>
       <Link
         to={`/product/${id}`}
