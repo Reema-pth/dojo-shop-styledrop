@@ -60,7 +60,7 @@ const SingleOrderHistory = () => {
                   {product?.quantity}
                 </td>
                 <td className="py-3 px-4 border-b text-right">
-                  ${product?.price.toFixed(2)}
+                  {product?.price.toFixed(2)}€
                 </td>
               </tr>
             ))}

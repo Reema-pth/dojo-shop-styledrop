@@ -6,7 +6,7 @@
 
 You are assisting a PM/PO consultant who just joined a new mission.
 
-The client is **StyleDrop**, a French fashion e-commerce brand selling clothing online. The product — this storefront — has been live for 18 months. Traffic is growing but conversion is stagnating. The team suspects friction in the user journey but has no data to confirm it and no roadmap to fix it.
+The client is **eXalt**, a French consulting firm that has just launched its official goodies & merch storefront for consultants and clients. The product — this storefront — has been live for 6 months. It sells branded clothing, accessories, stationery, and limited-edition items. Engagement is growing but the conversion rate is low and the browsing experience is not optimised. The team suspects friction in the user journey but has no data to confirm it and no roadmap to fix it.
 
 You've been staffed for a 3-month mission. Today is day one.
 
@@ -16,13 +16,15 @@ The consultant has no coding background. Your job is to be their technical partn
 
 ## The app in a nutshell
 
-- **Home**: featured products, hero banner
+- **Home**: hero banner, featured categories (Vêtements, Accessoires, Papeterie, Limited Edition)
 - **Catalog**: product listing with category filters and search
-- **Product detail**: image, title, description, price, add to cart
+- **Product detail**: image, title, description, price, add to cart (size + color + quantity selectors)
 - **Cart**: items, quantities, total, proceed to checkout
 - **Checkout**: multi-step form (delivery info → payment info → confirmation)
 - **Auth**: login / registration
 - **Profile**: user account, order history
+
+Products are eXalt-branded: hoodies, t-shirts, caps, tote bags, backpacks, notebooks, pens, travel mugs, sticker packs, and limited-edition collabs (eXalt x Flow).
 
 Start command: `npm start` (Vite on port 5173 + JSON mock API on port 3000)
 

@@ -35,7 +35,7 @@ const Cart = () => {
                 <li key={product.id} className="flex py-6 sm:py-10">
                   <div className="flex-shrink-0">
                     <img
-                      src={`/assets/${product.image}`}
+                      src={product.image?.startsWith("http") || product.image?.startsWith("/") ? product.image : `/assets/${product.image}`}
                       alt={product.title}
                       className="h-24 w-24 object-cover object-center sm:h-48 sm:w-48"
                     />
@@ -63,7 +63,7 @@ const Cart = () => {
                           ) : null}
                         </div>
                         <p className="mt-1 text-sm font-medium text-gray-900">
-                          ${product.price}
+                          {product.price}€
                         </p>
                       </div>
 
@@ -140,7 +140,7 @@ const Cart = () => {
               <div className="flex items-center justify-between">
                 <dt className="text-sm text-gray-600">Subtotal</dt>
                 <dd className="text-sm font-medium text-gray-900">
-                  ${subtotal}
+                  {subtotal}€
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
@@ -160,7 +160,7 @@ const Cart = () => {
                   </a>
                 </dt>
                 <dd className="text-sm font-medium text-gray-900">
-                  ${subtotal === 0 ? 0 : 5.0}
+                  {subtotal === 0 ? 0 : 5.0}€
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
@@ -180,7 +180,7 @@ const Cart = () => {
                   </a>
                 </dt>
                 <dd className="text-sm font-medium text-gray-900">
-                  ${subtotal / 5}
+                  {subtotal / 5}€
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4">
@@ -188,7 +188,7 @@ const Cart = () => {
                   Order total
                 </dt>
                 <dd className="text-base font-medium text-gray-900">
-                  ${subtotal === 0 ? 0 : subtotal + subtotal / 5 + 5}
+                  {subtotal === 0 ? 0 : subtotal + subtotal / 5 + 5}€
                 </dd>
               </div>
             </dl>

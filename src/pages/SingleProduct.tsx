@@ -30,15 +30,13 @@ const SingleProduct = () => {
 
   useEffect(() => {
     const fetchSingleProduct = async () => {
-      const response = await fetch(
-        `http://localhost:3000/products/${params.id}`
-      );
+      const response = await fetch(`/api/products/${params.id}`);
       const data = await response.json();
       setSingleProduct(data);
     };
 
     const fetchProducts = async () => {
-      const response = await fetch("http://localhost:3000/products");
+      const response = await fetch("/api/products");
       const data = await response.json();
       setProducts(data);
     };
@@ -82,7 +80,7 @@ const SingleProduct = () => {
               <p className="text-base text-secondaryBrown">
                 {formatCategoryName(singleProduct?.category || "")}
               </p>
-              <p className="text-base font-bold">${ singleProduct?.price }</p>
+              <p className="text-base font-bold">{singleProduct?.price}€</p>
             </div>
           </div>
           <div className="flex flex-col gap-2">
