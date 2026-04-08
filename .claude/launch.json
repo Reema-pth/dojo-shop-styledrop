@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dojo-shop",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /Users/clementmoreau/Documents/Claude_folder/dojo-shop2 && /opt/homebrew/bin/npm start"],
+      "port": 5173
+    }
+  ]
+}

@@ -12,11 +12,12 @@ const Header = () => {
     <>
     <header className="max-w-screen-2xl flex text-center justify-between items-center py-4 px-5 text-black mx-auto max-sm:px-5 max-[400px]:px-3">
       <HiBars3 className="text-2xl max-sm:text-xl mr-20 max-lg:mr-0 cursor-pointer" onClick={() => setIsSidebarOpen(true)} />
-      <Link
-        to="/"
-        className="text-4xl font-light tracking-[1.08px] max-sm:text-3xl max-[400px]:text-2xl"
-      >
-        FASHION
+      <Link to="/" className="flex items-center">
+        <img
+          src="https://images.prismic.io/exalt/ZlTQKaWtHYXtT1CW_HEADER_Logo.png?auto=format%2Ccompress&fit=max&w=256"
+          alt="eXalt"
+          className="h-8 max-sm:h-6"
+        />
       </Link>
       <div className="flex gap-4 items-center max-sm:gap-2">
         <Link to="/search">
