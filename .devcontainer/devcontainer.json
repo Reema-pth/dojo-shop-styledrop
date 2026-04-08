@@ -1,0 +1,17 @@
+{
+  "name": "Dojo Shop",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm install",
+  "postStartCommand": "npm start",
+  "forwardPorts": [5173, 3000],
+  "portsAttributes": {
+    "5173": {
+      "label": "Shop Storefront",
+      "onAutoForward": "openPreview"
+    },
+    "3000": {
+      "label": "Mock API",
+      "onAutoForward": "silent"
+    }
+  }
+}
