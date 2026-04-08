@@ -71,7 +71,7 @@ const SingleProduct = () => {
       <div className="grid grid-cols-3 gap-x-8 max-lg:grid-cols-1">
         <div className="lg:col-span-2">
           <img
-            src={singleProduct?.image?.startsWith("http") ? singleProduct.image : `/assets/${singleProduct?.image}`}
+            src={singleProduct?.image?.startsWith("http") || singleProduct?.image?.startsWith("/") ? singleProduct.image : `/assets/${singleProduct?.image}`}
             alt={singleProduct?.title}
           />
         </div>
