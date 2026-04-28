@@ -9,7 +9,7 @@
 
 | | |
 |---|---|
-| **Durée totale** | 3h00 |
+| **Durée totale** | 2h30 |
 | **Participants** | 4 à 12 consultants PO/PM/Chef de projet |
 | **Niveau** | Débutant-intermédiaire — aucun prérequis technique |
 | **Format** | Individuel ou binômes |
@@ -27,16 +27,15 @@
 ## Timing détaillé
 
 ```
-09:00 ──── Accueil & setup ──────────────────── 15 min
-09:15 ──── Phase 1 · Discovery ──────────────── 35 min
-09:50 ──── Débrief collectif Phase 1 ─────────── 10 min
-10:00 ──── Phase 2 · Documentation ──────────── 40 min
-10:40 ──── Pause ─────────────────────────────── 10 min
-10:50 ──── Phase 3 · Vibe Coding ─────────────── 55 min
-11:45 ──── Préparation pitch ─────────────────── 10 min
-11:55 ──── Pitches (4 min/groupe + 1 min Q&A) ── 30 min
-12:25 ──── Clôture & bilan ───────────────────── 10 min
-12:35 ──── FIN
+09:00 ──── Accueil & setup ──────────────────── 10 min
+09:10 ──── Phase 1 · Discovery ──────────────── 30 min
+09:40 ──── Débrief collectif Phase 1 ──────────  5 min
+09:45 ──── Phase 2 · Documentation ──────────── 30 min
+10:15 ──── Pause ─────────────────────────────── 5 min
+10:20 ──── Phase 3 · Vibe Coding ─────────────── 45 min
+11:05 ──── Pitches (4 min/groupe + 1 min Q&A) ── 20 min
+11:25 ──── Clôture & bilan ───────────────────── 5 min
+11:30 ──── FIN
 ```
 
 ---
@@ -94,7 +93,7 @@ une amélioration — en utilisant Claude Code comme co-équipier technique."
 
 ---
 
-## Phase 1 · Discovery (35 min)
+## Phase 1 · Discovery (30 min)
 
 ### Objectif pédagogique
 Montrer que Claude Code peut servir d'onboarding technique : lire le code, expliquer l'archi, identifier les frictions — sans que le PM ait à ouvrir un seul fichier.
@@ -135,7 +134,7 @@ Questions à poser au groupe :
 
 ---
 
-## Phase 2 · Documentation (40 min)
+## Phase 2 · Documentation (30 min)
 
 ### Objectif pédagogique
 Produire des livrables PM réels avec Claude : user stories, personas, gap analysis. Insister sur l'itération — le premier output n'est jamais le bon.
@@ -180,7 +179,7 @@ Inclus : contexte, valeur, utilisateurs cibles, métriques clés à suivre.
 
 ---
 
-## Phase 3 · Vibe Coding (55 min)
+## Phase 3 · Vibe Coding (45 min)
 
 ### Objectif pédagogique
 Faire vivre l'expérience du vibe coding : décrire une feature en langage naturel, laisser Claude l'implémenter, voir le résultat live dans le navigateur.
@@ -219,9 +218,9 @@ Avant de coder, dis-moi ce que tu vas faire et comment tu vas le faire.
 
 ### Gestion du temps
 
-- **T+15 min** : vérifier que tout le monde a démarré, proposer des idées aux indécis
-- **T+35 min** : annoncer "10 minutes pour finaliser et préparer la démo"
-- **T+45 min** : arrêt du vibe coding, préparation du pitch
+- **T+10 min** : vérifier que tout le monde a démarré, proposer des idées aux indécis
+- **T+30 min** : annoncer "15 minutes pour finaliser et préparer la démo"
+- **T+45 min** : arrêt du vibe coding, passage aux pitches
 
 ### Incidents fréquents
 
@@ -236,7 +235,7 @@ Avant de coder, dis-moi ce que tu vas faire et comment tu vas le faire.
 
 ## Pitches (30 min)
 
-### Format par groupe (5 min max)
+### Format par groupe (4 min max)
 
 1. **La feature** : en une phrase, ce que vous avez construit
 2. **Le problème** : quel utilisateur, quelle friction
