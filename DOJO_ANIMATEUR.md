@@ -160,11 +160,20 @@ gitGraph
 
 ### Invitation à l'exploration
 
-> "Tout ce que je viens de vous montrer existe sur des projets que vous utilisez tous les jours.
-> Excalidraw, Cal.com, Penpot, Mastodon, Bluesky… tous sont publics sur GitHub.
-> Vous pouvez aller lire leur roadmap, leurs bugs, leurs débats internes — sans IA, sans coder."
+> "Tout ce que je viens de vous montrer existe sur des projets que vous utilisez tous les jours."
 
-*(Indiquer 2-3 projets à explorer à l'oral, selon le profil du groupe.)*
+Citer 2-3 projets selon le profil du groupe :
+
+| Si le groupe utilise… | Montrer |
+|---|---|
+| Excalidraw en mission | **[github.com/excalidraw/excalidraw](https://github.com/excalidraw/excalidraw)** — les issues ont des mockups dedans, c'est immédiatement lisible |
+| Calendly / planification | **[github.com/calcom/cal.com](https://github.com/calcom/cal.com)** — discussions sur le pricing, le parcours user |
+| Zapier / automatisation | **[github.com/n8n-io/n8n](https://github.com/n8n-io/n8n)** — feature requests en langage métier |
+| Figma / design | **[github.com/penpot/penpot](https://github.com/penpot/penpot)** — issues avec captures d'écran |
+
+**Meilleur choix par défaut pour la démo** : Excalidraw. Les issues sont souvent des demandes de features avec des dessins — un PM comprend immédiatement ce qu'il lit.
+
+> "Vous pouvez aller lire leur roadmap, leurs bugs, leurs débats internes — sans IA, sans coder. GitHub n'est pas réservé aux devs."
 
 ### Point pédagogique clé
 
