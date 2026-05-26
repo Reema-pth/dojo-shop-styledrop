@@ -1,4 +1,6 @@
-# 📋 User Story — Quiz d'entrée "Révèle ton style eXalt"
+# 📋 User Story — Quiz d'entrée "Ton univers en 30 sec"
+
+> Anciennement "Révèle ton style eXalt" — renommé pour plus de clarté sur la promesse de rapidité.
 
 > **Spec dev complète — prête à implémentation**
 > Version 1.0 · Date : 2026-05-26 · Auteur : PM eXalt
@@ -58,7 +60,7 @@ Créer un **parcours sur-mesure** qui qualifie le visiteur dès son arrivée, lu
 
 **Contenu affiché :**
 - Sur-titre : *"Et si on faisait connaissance ?"* (en small caps, marron secondaire)
-- Titre principal : **"Révèle ton style eXalt"**
+- Titre principal : **"Ton univers en 30 sec"**
 - Sous-titre : *"3 questions, 30 secondes, une sélection rien que pour toi."*
 - Bouton primaire : **"Commencer"** (marron eXalt, pleine largeur)
 - Lien secondaire : **"Passer"** (gris, souligné)
@@ -186,7 +188,7 @@ type StoredQuizState = {
 
 **Tous les emails contiennent :**
 - Logo eXalt
-- Nom du quiz : *"Révèle ton style eXalt"*
+- Nom du quiz : *"Ton univers en 30 sec"*
 - 3 visuels produits avec nom + prix + lien
 - Bouton primaire : *"Accéder à ma sélection"*
 - Footer eXalt + lien désinscription

@@ -179,9 +179,9 @@ const QuizPopup = () => {
             <p className="text-sm text-secondaryBrown uppercase tracking-widest mb-2">
               Et si on faisait connaissance ?
             </p>
-            <h2 className="text-4xl font-bold mb-4">Révèle ton style eXalt</h2>
+            <h2 className="text-4xl font-bold mb-4">Ton univers en 30 sec</h2>
             <p className="text-gray-600 mb-8">
-              3 questions, 30 secondes, une sélection rien que pour toi.
+              3 questions, une sélection rien que pour toi.
             </p>
             <div className="flex flex-col gap-3 max-w-sm mx-auto">
               <button
