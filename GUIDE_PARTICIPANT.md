@@ -16,43 +16,32 @@
 
 ---
 
-## Étape 2 — Ouvre le repo du dojo
+## Étape 2 — Ouvre la boutique eXalt
 
-1. Va sur ce lien : **[github.com/Clementmoro/dojo-shop-styledrop](https://github.com/Clementmoro/dojo-shop-styledrop)**
-2. Tu arrives sur la page du projet — c'est le code de la boutique eXalt
+Va directement sur : **[dojo-shop-styledrop.vercel.app](https://dojo-shop-styledrop.vercel.app)**
 
----
+✅ **Tu vois la boutique ? Tu es prêt pour les phases 1 et 2.**
 
-## Étape 3 — Lance ton environnement de travail (Codespace)
-
-1. Clique sur le bouton vert **`<> Code`** (en haut à droite du repo)
-2. Clique sur l'onglet **`Codespaces`**
-3. Clique sur **`Create codespace on main`**
-
-> ⏳ **Première ouverture : ~2 minutes.** Le navigateur va lancer un éditeur de code complet dans le cloud. Tu n'installes rien sur ton PC.
-
-4. Une fois chargé, tu vois un éditeur type VS Code dans ton navigateur
-5. En bas, un terminal affiche : `npm start` — la boutique se lance automatiquement
-6. Une notification apparaît : **"Port 5173 is available"** → clique sur **"Open in Browser"** pour voir la boutique
-
-✅ **Tu vois la boutique eXalt ? Tu es prêt.**
+> Le code source est disponible ici : **[github.com/Clementmoro/dojo-shop-styledrop](https://github.com/Clementmoro/dojo-shop-styledrop)**
 
 ---
 
-## Étape 4 — Connecte-toi à Claude Code
+## Étape 3 — Connecte-toi à Claude Code
 
 1. Va sur **[claude.ai/code](https://claude.ai/code)** dans un nouvel onglet
 2. Connecte-toi avec ton compte Anthropic (ou crée-en un gratuitement)
-3. Dans l'interface Claude Code, connecte-toi à ton Codespace :
+3. Dans l'interface Claude Code, connecte-toi au repo GitHub :
    - Clique sur **"Connect to GitHub Codespace"**
    - Autorise l'accès à GitHub si demandé
-   - Sélectionne ton Codespace `dojo-shop-styledrop`
+   - Sélectionne le Codespace `dojo-shop-styledrop`
 
-> 💡 **Claude Code voit maintenant tout le code du projet.** Il peut lire les fichiers, comprendre l'architecture, et modifier le code en direct.
+> 💡 **Claude Code voit tout le code du projet.** Il peut lire les fichiers, comprendre l'architecture, et modifier le code en direct.
+
+> ⚠️ **Le Codespace est nécessaire uniquement pour la Phase 3 (Vibe Coding).** Pour les phases 1 et 2, la boutique Vercel suffit — pas besoin de le lancer tout de suite.
 
 ---
 
-## Étape 5 — Dis bonjour à Claude
+## Étape 4 — Dis bonjour à Claude
 
 Dans la fenêtre de chat Claude Code, tape :
 

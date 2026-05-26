@@ -28,12 +28,13 @@
 
 ```
 09:00 ──── Accueil & setup ──────────────────── 10 min
-09:10 ──── Phase 1 · Discovery ──────────────── 30 min
-09:40 ──── Débrief collectif Phase 1 ──────────  5 min
-09:45 ──── Phase 2 · Documentation ──────────── 30 min
-10:15 ──── Pause ─────────────────────────────── 5 min
-10:20 ──── Phase 3 · Vibe Coding ─────────────── 45 min
-11:05 ──── Pitches (4 min/groupe + 1 min Q&A) ── 20 min
+09:10 ──── Intro GitHub ──────────────────────── 15 min
+09:25 ──── Phase 1 · Discovery ──────────────── 30 min
+09:55 ──── Débrief collectif Phase 1 ──────────  5 min
+10:00 ──── Phase 2 · Documentation ──────────── 30 min
+10:30 ──── Pause (lancer Codespaces) ─────────── 5 min
+10:35 ──── Phase 3 · Vibe Coding ─────────────── 40 min
+11:15 ──── Pitches (4 min/groupe + 1 min Q&A) ── 10 min
 11:25 ──── Clôture & bilan ───────────────────── 5 min
 11:30 ──── FIN
 ```
@@ -44,11 +45,11 @@
 
 ### Vérifications à faire la veille
 
+- [ ] Vérifier que la boutique Vercel est accessible : **[dojo-shop-styledrop.vercel.app](https://dojo-shop-styledrop.vercel.app)**
+- [ ] Tester le parcours complet sur Vercel (catalogue → fiche produit → panier → checkout)
 - [ ] Le repo `github.com/Clementmoro/dojo-shop-styledrop` est public
-- [ ] Créer un Codespace de test et vérifier que la boutique se lance (port 5173)
-- [ ] Vérifier que `npm start` lance bien Vite + json-server simultanément
-- [ ] Tester le premier prompt Discovery sur le Codespace de test
-- [ ] Préparer le lien court (bit.ly ou équivalent) vers le repo GitHub
+- [ ] Créer un Codespace de test uniquement si la Phase 3 (Vibe Coding) est prévue
+- [ ] Vérifier que `npm start` lance bien Vite + json-server simultanément (test local)
 - [ ] Avoir le GUIDE_PARTICIPANT.md accessible à projeter
 
 ### Préparer les comptes
@@ -79,17 +80,68 @@ une amélioration — en utilisant Claude Code comme co-équipier technique."
 ### Actions
 
 1. Projeter le GUIDE_PARTICIPANT.md
-2. Guider les participants : GitHub → Codespace → claude.ai/code
+2. Guider les participants : ouvrir **[dojo-shop-styledrop.vercel.app](https://dojo-shop-styledrop.vercel.app)** + claude.ai/code
 3. Vérifier que tout le monde voit la boutique dans son navigateur
-4. Vérifier que Claude Code est connecté au Codespace
+4. Vérifier que Claude Code est connecté au repo GitHub
 
 ### Points de vigilance
 
-- **Codespace lent au démarrage** : normal, ça prend 2-3 min la première fois
-- **"Port 5173 is available"** : si la notif ne s'affiche pas, taper `npm start` dans le terminal
+- **Vercel inaccessible depuis le réseau client** : avoir un hotspot de secours, ou partager son écran pour la démo
 - **claude.ai/code ne voit pas les fichiers** : vérifier que le bon Codespace est sélectionné
+- **Le Codespace n'est nécessaire qu'en Phase 3** — ne pas le lancer avant, ça économise du temps de setup
 
-> ⏱️ Si le setup dépasse 20 min, passer en binômes pour économiser les Codespaces
+> ⏱️ Le setup Vercel + Claude Code devrait tenir en 10 min. Si la Phase 3 est prévue, lancer les Codespaces pendant la pause.
+
+---
+
+## Phase 0.5 · Introduction à GitHub (15 min)
+
+### Objectif pédagogique
+Donner aux participants une représentation mentale de ce qu'est GitHub avant de demander à Claude d'y naviguer. Sans ce contexte, ils ne comprennent pas pourquoi Claude peut "lire le code" ou ce que signifie "l'historique du projet".
+
+### Script animateur
+
+```
+"Avant de commencer, je veux vous montrer quelque chose.
+Vous savez ce qu'est une Google Doc avec l'historique des modifications ?
+GitHub, c'est exactement ça — mais pour du code.
+Chaque modification est enregistrée, datée, commentée.
+On peut voir QUI a changé QUOI, QUAND, et POURQUOI.
+C'est une mine d'or pour un consultant qui arrive sur une mission."
+```
+
+### Démo live à projeter (sur github.com/Clementmoro/dojo-shop-styledrop)
+
+**1. La page d'accueil du repo**
+- Montrer les fichiers → "c'est le code de la boutique qu'on vient de voir"
+- Montrer le README → "la doc du projet, comme une page de présentation"
+- Montrer le nombre de commits → "chaque ligne = une modification enregistrée"
+
+**2. L'historique des commits** (`Commits` en haut à droite)
+- Cliquer sur un commit → montrer le message, la date, l'auteur
+- Exemple à montrer : *"Fix API proxy, image paths, currency"*
+- "En lisant ça, je sais déjà qu'il y a eu des bugs au lancement"
+
+**3. Le diff d'un commit** (cliquer sur le SHA)
+- Montrer les lignes en rouge (supprimées) et en vert (ajoutées)
+- "Sans ouvrir un seul fichier, je vois exactement ce qui a changé"
+- "Sur une vraie mission, vous pouvez reconstituer toute l'histoire du produit"
+
+**4. Le CLAUDE.md** (revenir à la racine, cliquer sur CLAUDE.md)
+- "Ce fichier, c'est le brief que Claude va lire automatiquement"
+- "C'est comme laisser un post-it à votre nouveau collègue le jour où il arrive"
+
+### Point pédagogique clé
+
+> "GitHub n'est pas un outil de développeur. C'est un outil de traçabilité.
+> En tant que PM, vous avez le droit de lire tout ça — et Claude vous aide à l'interpréter."
+
+### Transition vers la Phase 1
+
+```
+"Maintenant que vous savez ce que Claude va pouvoir lire,
+on va lui donner accès à tout ça et lui poser nos premières questions."
+```
 
 ---
 
