@@ -28,12 +28,12 @@
 
 ```
 09:00 ──── Accueil & setup ──────────────────── 10 min
-09:10 ──── Intro GitHub ──────────────────────── 15 min
-09:25 ──── Phase 1 · Discovery ──────────────── 30 min
-09:55 ──── Débrief collectif Phase 1 ──────────  5 min
-10:00 ──── Phase 2 · Documentation ──────────── 30 min
-10:30 ──── Pause (lancer Codespaces) ─────────── 5 min
-10:35 ──── Phase 3 · Vibe Coding ─────────────── 40 min
+09:10 ──── Intro GitHub ──────────────────────── 10 min
+09:20 ──── Phase 1 · Discovery ──────────────── 30 min
+09:50 ──── Débrief collectif Phase 1 ──────────  5 min
+09:55 ──── Phase 2 · Documentation ──────────── 30 min
+10:25 ──── Pause (lancer Codespaces) ─────────── 5 min
+10:30 ──── Phase 3 · Vibe Coding ─────────────── 45 min
 11:15 ──── Pitches (4 min/groupe + 1 min Q&A) ── 10 min
 11:25 ──── Clôture & bilan ───────────────────── 5 min
 11:30 ──── FIN
@@ -94,47 +94,86 @@ une amélioration — en utilisant Claude Code comme co-équipier technique."
 
 ---
 
-## Phase 0.5 · Introduction à GitHub (15 min)
+## Phase 0.5 · Introduction à GitHub (10 min)
 
 ### Objectif pédagogique
-Donner aux participants une représentation mentale de ce qu'est GitHub avant de demander à Claude d'y naviguer. Sans ce contexte, ils ne comprennent pas pourquoi Claude peut "lire le code" ou ce que signifie "l'historique du projet".
+Donner aux participants une représentation mentale de ce qu'est GitHub avant de demander à Claude d'y naviguer. Sans ce contexte, ils ne comprennent pas pourquoi Claude peut "lire le code" ou ce que signifie "l'historique du projet". L'objectif secondaire : leur donner envie d'aller fouiller des projets open source par eux-mêmes.
 
-### Script animateur
+### Script d'ouverture (1 min)
 
 ```
-"Avant de commencer, je veux vous montrer quelque chose.
-Vous savez ce qu'est une Google Doc avec l'historique des modifications ?
-GitHub, c'est exactement ça — mais pour du code.
-Chaque modification est enregistrée, datée, commentée.
-On peut voir QUI a changé QUOI, QUAND, et POURQUOI.
-C'est une mine d'or pour un consultant qui arrive sur une mission."
+"GitHub, c'est l'équivalent d'une Google Doc avec historique — mais pour des produits entiers.
+Chaque modif est enregistrée, datée, commentée par celui qui l'a faite.
+Vous y trouvez le code, mais aussi : toutes les versions du produit, les bugs signalés,
+les features demandées par les utilisateurs, les discussions internes de l'équipe.
+C'est une documentation vivante, et c'est public sur des milliers de produits que vous utilisez."
 ```
 
-### Démo live à projeter (sur github.com/Clementmoro/dojo-shop-styledrop)
+### Les 6 concepts en analogies (3 min, à projeter)
 
-**1. La page d'accueil du repo**
-- Montrer les fichiers → "c'est le code de la boutique qu'on vient de voir"
-- Montrer le README → "la doc du projet, comme une page de présentation"
-- Montrer le nombre de commits → "chaque ligne = une modification enregistrée"
+| Concept | Analogie non-tech |
+|---|---|
+| **Repo** | Le classeur du projet — tout est dedans : code, doc, historique |
+| **README** | La page de présentation à l'entrée du classeur — à quoi sert le projet, comment l'utiliser |
+| **Commit** | Une sauvegarde nommée, avec un message qui dit POURQUOI on a changé quelque chose |
+| **Branch** | Un brouillon parallèle, pour tester une idée sans toucher à la version officielle |
+| **Merge** | Quand on valide le brouillon et qu'on l'intègre dans la version officielle |
+| **Pull Request** | "Voici mes modifs, est-ce qu'on les valide ?" — comme un commentaire Notion à approuver |
+| **Fork** | Photocopier le classeur entier, avec tout son historique, pour partir avec et continuer à part |
 
-**2. L'historique des commits** (`Commits` en haut à droite)
-- Cliquer sur un commit → montrer le message, la date, l'auteur
-- Exemple à montrer : *"Fix API proxy, image paths, currency"*
-- "En lisant ça, je sais déjà qu'il y a eu des bugs au lancement"
+### Le schéma à projeter
 
-**3. Le diff d'un commit** (cliquer sur le SHA)
-- Montrer les lignes en rouge (supprimées) et en vert (ajoutées)
-- "Sans ouvrir un seul fichier, je vois exactement ce qui a changé"
-- "Sur une vraie mission, vous pouvez reconstituer toute l'histoire du produit"
+```mermaid
+gitGraph
+    commit id: "v1.0"
+    commit id: "fix bug login"
+    branch feature/wishlist
+    checkout feature/wishlist
+    commit id: "add wishlist UI"
+    commit id: "save in localStorage"
+    checkout main
+    commit id: "update README"
+    merge feature/wishlist
+    commit id: "v1.1"
+```
 
-**4. Le CLAUDE.md** (revenir à la racine, cliquer sur CLAUDE.md)
-- "Ce fichier, c'est le brief que Claude va lire automatiquement"
-- "C'est comme laisser un post-it à votre nouveau collègue le jour où il arrive"
+> 💡 Expliquer en montrant le schéma : "La ligne du milieu, c'est la version officielle du produit. Quelqu'un a voulu ajouter une wishlist : il a créé un brouillon (branch), fait 2 sauvegardes (commits), puis a tout intégré dans la version officielle (merge). À la fin, le produit est passé de v1.0 à v1.1."
+
+### Démo live (5 min)
+
+**1. La page d'accueil du repo** → `github.com/Clementmoro/dojo-shop-styledrop`
+- "Voilà à quoi ressemble le classeur du projet eXalt Shop"
+- Montrer le **README** : "c'est la première chose à lire — il décrit le produit, comment le lancer, à quoi il sert"
+
+**2. L'historique des commits** (onglet `Commits`)
+- Cliquer sur un commit récent → montrer le message, la date, l'auteur, les fichiers changés
+- Exemple parlant : *"Fix API proxy, image paths, currency"* → "je sais qu'il y a eu un bug d'affichage au lancement"
+
+**3. La timeline visuelle des branches** (`Insights` → `Network`)
+- "Ce graphique, c'est la vie du produit. Chaque ligne = une branche. Les points = des commits. Les croisements = des merges."
+- "C'est la même chose que ce que vous voyez dans un IDE comme VS Code"
+
+**4. Quelques bonus si le temps le permet**
+- Onglet **Issues** : "ce sont les bugs ou demandes de features — comme des tickets Notion"
+- Onglet **Pull requests** : "des modifs proposées en attente de validation"
+- Onglet **Releases** : "les versions officielles publiées, avec leur changelog"
+
+### Invitation à l'exploration
+
+> "Tout ce que je viens de vous montrer existe sur des projets que vous utilisez tous les jours.
+> Excalidraw, Cal.com, Penpot, Mastodon, Bluesky… tous sont publics sur GitHub.
+> Vous pouvez aller lire leur roadmap, leurs bugs, leurs débats internes — sans IA, sans coder."
+
+*(Indiquer 2-3 projets à explorer à l'oral, selon le profil du groupe.)*
 
 ### Point pédagogique clé
 
-> "GitHub n'est pas un outil de développeur. C'est un outil de traçabilité.
-> En tant que PM, vous avez le droit de lire tout ça — et Claude vous aide à l'interpréter."
+> "GitHub n'est pas un outil de développeur. C'est un outil de traçabilité collaborative.
+> Vous avez le droit de tout lire — et Claude vous aide à l'interpréter."
+
+### Sur le fork du projet du dojo
+
+> "Notre repo `dojo-shop-styledrop` est public. En cliquant sur **Fork**, vous récupérez TOUTE l'histoire du projet — chaque commit, chaque branche, chaque release. Le fork garde l'historique complet. À partir de là, votre copie devient la vôtre."
 
 ### Transition vers la Phase 1
 
