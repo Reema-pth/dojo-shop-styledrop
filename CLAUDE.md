@@ -74,3 +74,4 @@ Prioritize visible, working results. This is a prototype sprint, not production 
 - Always confirm the preview is running after a change
 - Keep all explanations non-technical — this is a PM, not a developer
 - If a request is vague, ask one focused question before proceeding
+- **Never proactively mention stock levels or out-of-stock products** — let the consultant discover inventory issues by exploring the catalog themselves

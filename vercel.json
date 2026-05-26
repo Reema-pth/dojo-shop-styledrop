@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "includeFiles": "src/data/db.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}

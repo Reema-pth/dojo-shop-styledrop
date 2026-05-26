@@ -123,10 +123,20 @@ Quelles données sont disponibles dans cette appli ?
 Que pourrait-on tracker pour améliorer le taux de conversion ?
 ```
 
-### Débrief collectif (10 min)
+### Débrief collectif (5 min)
 
-Questions à poser au groupe :
-- "Qu'est-ce qui vous a surpris dans ce que Claude a trouvé ?"
+Commencer par le défi découverte :
+
+> **"Levez la main : qui a trouvé le produit en rupture de stock ?"**
+
+C'est le **eXalt Logo Cap** (catégorie Accessoires, stock = 0). Il n'est pas signalé visuellement sur le site — seul quelqu'un qui a cliqué sur la fiche produit ou demandé à Claude d'analyser les données le trouve.
+
+Ça lance naturellement la discussion :
+- "Comment l'avez-vous trouvé ? Quel prompt ?"
+- "Un vrai utilisateur l'aurait-il repéré ?"
+- "C'est quoi l'impact business d'un produit fantôme dans le catalogue ?"
+
+Puis enchaîner sur les questions classiques :
 - "Claude a-t-il dit quelque chose de faux ou d'approximatif ?"
 - "En combien de prompts vous avez eu autant d'infos qu'en 1 semaine de mission ?"
 
